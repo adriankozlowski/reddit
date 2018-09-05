@@ -22,9 +22,9 @@
 
         <div class="collapse navbar-collapse navHeaderCollapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Główna</a></li>
+                <li class="active"><a href="index.jsp">Główna</a></li>
                 <li><a href="#">Dodaj</a></li>
-                <li><a href="#">Zaloguj się</a></li>
+                <li><a href="login.jsp">Zaloguj się</a></li>
             </ul>
         </div>
 
