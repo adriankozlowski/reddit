@@ -26,6 +26,27 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.0.8.RELEASE</version>
+    </dependency>
+      <!-- https://mvnrepository.com/artifact/com.googlecode.catch-exception/catch-exception -->
+      <dependency>
+          <groupId>com.googlecode.catch-exception</groupId>
+          <artifactId>catch-exception</artifactId>
+          <version>1.2.0</version>
+          <scope>test</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.0.1</version>
+          <scope>provided</scope>
+      </dependency>
+
   </dependencies>
 
   <build>
