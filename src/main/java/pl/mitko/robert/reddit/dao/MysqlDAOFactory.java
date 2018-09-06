@@ -3,17 +3,17 @@ package pl.mitko.robert.reddit.dao;
 public class MysqlDAOFactory extends DAOFactory {
 
     @Override
-    public DiscoveryDAO getDiscoveryDao() {
+    public DiscoveryDAO getDiscoveryDAO() {
         return new DiscoveryDAOImpl();
     }
 
     @Override
-    public UserDAO getUserDao() {
+    public UserDAO getUserDAO() {
         return new UserDAOImpl();
     }
 
     @Override
-    public VoteDAO getVoteDao() {
+    public VoteDAO getVoteDAO() {
         return new VoteDAOImpl();
     }
 }

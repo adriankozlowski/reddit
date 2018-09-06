@@ -1,34 +1,19 @@
 package pl.mitko.robert.reddit.util;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.sql.DataSource;
-
 public class ConnectionProvider {
-
-    private static DataSource dataSource;
-
-    public static Connection getConnection() throws SQLException {
-        return getDataSource().getConnection();
-    }
-
-    public static DataSource getDataSource() {
-        if (dataSource == null) {
-            try {
-                Context initialContext = new InitialContext();
-                Context envContext = (Context) initialContext
-                        .lookup("java:comp/env");
-                DataSource ds = (DataSource) envContext.lookup("jdbc/reddit");
-                dataSource = ds;
-            } catch (NamingException e) {
-                e.printStackTrace();
-            }
+    public static Connection getConnection() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = null;
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/reddit", "root", "password");
+            return connection;
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+            return null;
         }
-
-        return dataSource;
     }
 }
