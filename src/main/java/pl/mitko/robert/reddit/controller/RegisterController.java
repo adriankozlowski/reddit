@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import pl.mitko.robert.reddit.service.UserService;
 
 
-@WebServlet("/register")
+@WebServlet(urlPatterns = "/register")
 public class RegisterController extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
