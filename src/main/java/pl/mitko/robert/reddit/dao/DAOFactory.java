@@ -6,11 +6,11 @@ public abstract class DAOFactory {
 
     public static final int MYSQL_DAO_FACTORY = 1;
 
-    public abstract DiscoveryDAO getDiscoveryDao();
+    public abstract DiscoveryDAO getDiscoveryDAO();
 
-    public abstract UserDAO getUserDao();
+    public abstract UserDAO getUserDAO();
 
-    public abstract VoteDAO getVoteDao();
+    public abstract VoteDAO getVoteDAO();
 
     public static DAOFactory getDAOFactory() {
         DAOFactory factory = null;

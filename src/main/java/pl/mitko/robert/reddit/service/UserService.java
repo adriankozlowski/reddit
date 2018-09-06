@@ -12,7 +12,7 @@ public class UserService {
         user.setEmail(email);
         user.setActive(true);
         DAOFactory factory = DAOFactory.getDAOFactory();
-        UserDAO userDao = factory.getUserDao();
+        UserDAO userDao = factory.getUserDAO();
         userDao.create(user);
     }
 }

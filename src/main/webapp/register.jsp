@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reddit - rejestracja</title>
+    <title>Weekop - rejestracja</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/resources/css/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -29,9 +29,9 @@
 
         <div class="collapse navbar-collapse navHeaderCollapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.jsp">Główna</a></li>
+                <li class="active"><a href="#">Główna</a></li>
                 <li><a href="#">Dodaj</a></li>
-                <li><a href="login.jsp">Zaloguj się</a></li>
+                <li><a href="#">Zaloguj się</a></li>
             </ul>
         </div>
 
@@ -40,7 +40,7 @@
 
 <div class="container">
     <div class="col-sm-6 col-md-4 col-md-offset-4">
-        <form class="form-signin" method="post" action="#">
+        <form class="form-signin" method="post" action="register">
             <h2 class="form-signin-heading">Zarejestruj się</h2>
             <input name="inputEmail" type="email" class="form-control" placeholder="Email" required autofocus />
             <input name="inputUsername" type="text" name="inputUsername" class="form-control" placeholder="Nazwa użytkownika" required autofocus />

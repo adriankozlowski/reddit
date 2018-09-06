@@ -1,14 +1,15 @@
 package pl.mitko.robert.reddit.dao;
 
+import java.util.List;
+
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+
 import pl.mitko.robert.reddit.model.User;
 import pl.mitko.robert.reddit.util.ConnectionProvider;
-
-import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
 
@@ -19,16 +20,6 @@ public class UserDAOImpl implements UserDAO {
 
     public UserDAOImpl() {
         template = new NamedParameterJdbcTemplate(ConnectionProvider.getDataSource());
-    }
-
-    @Override
-    public List<User> getAll() {
-        return null;
-    }
-
-    @Override
-    public User getUserByUsername(String username) {
-        return null;
     }
 
     @Override
@@ -63,5 +54,15 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public boolean delete(Long key) {
         return false;
+    }
+
+    @Override
+    public List<User> getAll() {
+        return null;
+    }
+
+    @Override
+    public User getUserByUsername(String username) {
+        return null;
     }
 }
